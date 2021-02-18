@@ -14,7 +14,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTableModule } from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
-
+import { MatProgressBarModule } from "@angular/material/progress-bar";
 
 @NgModule({
 	declarations: [
@@ -32,7 +32,8 @@ import {MatButtonModule} from '@angular/material/button';
 		MatTooltipModule,
 		MatTableModule,
 		NoopAnimationsModule,
-		MatButtonModule
+		MatButtonModule,
+		MatProgressBarModule
 	],
 	providers: [WeatherService],
 	bootstrap: [AppComponent]

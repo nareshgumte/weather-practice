@@ -44,7 +44,7 @@ export class WeatherService {
 			);
 	}
 
-	private getWeatherReport(city: string): Observable<{
+	public getWeatherReport(city: string): Observable<{
 		name: string;
 		temp: string;
 		sunrise: number;

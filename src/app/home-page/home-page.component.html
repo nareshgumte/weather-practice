@@ -1,4 +1,6 @@
 <div class="grid-container">
+    <mat-progress-bar mode="indeterminate" *ngIf="loader"></mat-progress-bar>
+
     <mat-card *ngFor="let item of weatherItes$|async" class="grid-item" [routerLink]="'/details-page/'+item.name">
         <mat-card-header>
             <mat-card-title>{{item.name}}</mat-card-title>
