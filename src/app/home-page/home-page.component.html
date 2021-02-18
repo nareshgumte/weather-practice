@@ -1,0 +1,18 @@
+<div class="grid-container">
+    <mat-card *ngFor="let item of weatherItes$|async" class="grid-item" [routerLink]="'/details-page/'+item.name">
+        <mat-card-header>
+            <mat-card-title>{{item.name}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-icon matTooltip="Temperature">thermostat</mat-icon> {{item.temp}} ℃
+            </div>
+            <div>
+                <mat-icon matTooltip="Sunrise">wb_twilight</mat-icon> {{item.sunrise | date:'full'}}
+            </div>
+            <div>
+                <mat-icon matTooltip="Sunset">nights_stay</mat-icon> {{item.sunset | date:'full'}}
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

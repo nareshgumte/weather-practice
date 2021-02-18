@@ -1,0 +1,17 @@
+:host {
+    mat-card {
+        margin: 8px 0;
+        cursor: pointer;
+    }
+    .grid-container {
+        display: grid;
+        grid-column-gap: 5px;
+        grid-template-columns: auto auto auto;
+        background-color: #dbe4ea;
+        padding: 10px;
+    }
+    .grid-item {
+        padding: 20px;
+        text-align: center;
+    }
+}
